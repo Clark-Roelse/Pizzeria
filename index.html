@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylecheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Superman Pizza and Pub</h1>
+    </div>
+</div>
+<form>
+    <fieldset>
+        <legend>Customer:</legend>
+        <div class="row">
+            <div>
+                <label for="firstname">First</label>
+                <input id="firstname" name="first_name" type="text">
+            </div>
+            <div>
+                <label for="lastname">Last</label>
+                <input id="lastname" name="last_name" type="text">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text">
+            </div>
+        </div>
+    </fieldset>
+    <div class="row">
+        <fieldset>
+            <legend>Pre Made Pizzas:</legend>
+            <div>
+                <input type="radio" id="pep" name="pep">
+                <label for="pep">Peperoni</label>
+            </div>
+            <div>
+                <input type="radio" id="Hawian" name="Hawian">
+                <label for="Hawian">Hawian</label>
+            </div>
+            <div>
+                <input type="radio" id="combo" name="combo">
+                <label for="combo">Combonation</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset>
+            <legend>Size:</legend>
+            <div>
+                <input type="radio" id="small" name="size>
+        <label for="small">Small</label>
+            </div>
+            <div>
+                <input type="radio" id="medium" name="size">
+                <label for="medium">Medium</label>
+            </div>
+            <div>
+                <input type="radio" id="large" name="size">
+                <label for="large">Large</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="row">
+        <fieldset>
+            <legend>Toppings:</legend>
+            <div>
+                <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+                <label for="sprinkles">Sprinkles</label>
+            </div>
+            <div>
+                <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
+                <label for="whippedCream">Whipped Cream</label>
+            </div>
+            <div>
+                <input type="checkbox" id="carmel" name="carmel" value="carmel">
+                <label for="carmel">Carmel</label>
+            </div>
+        </fieldset>
+    </div>
+    <fieldset>
+        <legend>Cup or Cone:</legend>
+        <label for="container">Please Choose One</label>
+        <select name="container" id="container">
+            <option value="select">-Select-</option>
+            <option value="cup">Plastic Cup</option>
+            <option value="sugar">Sugar Cone</option>
+            <option value="waffle">Waffle Cone</option>
+            <option value="dipperWaffle">Chocolate Dipped Waffle Cone</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Special:</legend>
+        <label for="SpecialRequests">Special Requests:</label>
+        <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="18" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+    </fieldset>
+    <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+    <button type="submit">Submit Order</button>
+</form>
+</div>
+</body>
+</html>
